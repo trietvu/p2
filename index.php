@@ -158,7 +158,7 @@
 							<label for='camelCase'>Camel Case (No space, first letter capitalize)</label><br><br>
 						</p>
 					 	<div class='submit'><input type='submit' value='Submit' class='pill'></div>
-				 </form>bumpers1
+				 </form>
 			 </div>
 		</div>
 	</body>
