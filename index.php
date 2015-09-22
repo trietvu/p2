@@ -25,6 +25,7 @@
 								$i = 0;
 								if(isset($_POST['numberWords'])){
 									$numberWords = $_POST['numberWords'];
+									//Condition to determine if the number of words field input is an integer
 									if(ctype_digit($numberWords) == false){
 										print '<p>Please type in a <u>whole number</u> between 1-9.</p>';
 									}
@@ -51,6 +52,7 @@
 									$symbol = '';
 								}
 
+								//Condition to allow user to choose the type of spacing between words
 								if(isset($_POST['spacing'])){
 									$spacing = $_POST['spacing'];
 									if($spacing == 'hyphen'){
@@ -77,10 +79,11 @@
 										break;
 									}
 									elseif($i < $numberWords ){
-										//Condition to add a capital letter to each word.
+										//Condition to add a capital letter to each word
 										if(isset($_POST['addCapital'])){
 											$wordy = ucwords($wordy);
 										}
+										//Condition to remove spacing for CamelCase option
 										elseif(isset($_POST['spacing'])){
 										  $spacing = $_POST['spacing'];
 										  if($spacing == 'camelCase'){
@@ -89,7 +92,7 @@
 										}
 										else{
 										}
-										//Condition to make all words capital letters.
+										//Condition to make all words capital letters
 										if(isset($_POST['allCaps'])){
 											$wordy = strtoupper($wordy);
 										}
@@ -97,10 +100,12 @@
 										}
 										print $wordy.$sp;
 									}
+									//Condition to add a capital letter in front of each word
 									elseif($i = $numberWords){
 										if(isset($_POST['addCapital'])){
 											$wordy = ucwords($wordy);
 										}
+										//Condition to add a capital letter in front of each word for CamelCase option
 										elseif(isset($_POST['spacing'])){
 										  $spacing = $_POST['spacing'];
 										  if($spacing == 'camelCase'){
@@ -109,6 +114,7 @@
 										}
 										else{
 										}
+										//Condition to make all words all caps
 										if(isset($_POST['allCaps'])){
 											$wordy = strtoupper($wordy);
 										}
@@ -152,7 +158,7 @@
 							<label for='camelCase'>Camel Case (No space, first letter capitalize)</label><br><br>
 						</p>
 					 	<div class='submit'><input type='submit' value='Submit' class='pill'></div>
-				 </form>
+				 </form>bumpers1
 			 </div>
 		</div>
 	</body>
