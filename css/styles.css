@@ -1,0 +1,88 @@
+body {
+	background: #fff;
+	margin:0px;
+	border: 0px;
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#333333;
+	line-height: 145%;
+}
+
+.container {
+	background: #fff;
+	width: 650px;
+	margin: 30px auto 0px auto;
+}
+
+.topBar {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	background-color: #666;
+}
+
+.password {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:28px;
+	width: 650px;
+	height: 80px;
+	color:#666;
+	line-height: 135%;
+	margin: 0px 0px 5px 0px;
+	padding: 10px;
+	background-color: #ffcc00;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border:1px solid #666;
+	text-shadow:#C17C3A 0 -1px 0;
+}
+
+h1 {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:42px;
+	font-weight: bold;
+	color: #336699;
+	line-height: 140%;
+	margin: 0px 0px 30px 0px;
+	padding: 0px;
+	border: 0px;
+	text-align: center;
+}
+
+.pill {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color: #ffffff;
+	background-color: #ff6600;
+	line-height:145%x;
+	border-radius:40px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	border:2px dotted #666;
+	text-shadow:#555 0 1px 0;
+	width:100px;
+	height:40px;
+	text-align: center;
+}
+
+.submit {
+	margin: 10px 0px 0px 0px;
+	width:550px;
+	height:40px;
+	text-align: center;
+}
+
+.conditions {
+	width: 622px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px 0px 20px 50px;
+	background-color: #eee;
+	border-bottom: 1px solid #666;
+}
+
+p {
+	margin: 20px 0px 0px 0px;
+}
