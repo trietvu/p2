@@ -17,7 +17,7 @@
 					 <?php
 							//Created function to pull random words from crosswd.txt file.
 							function extractWord(){
-								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand(0,138000)];
+								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand(0,113808)];
 								return $words;
 								}
 
@@ -68,7 +68,7 @@
 								else{
 									$sp = '-';
 								}
-								$wordy = extractWord();
+
 								//Loop to cycle through function to generate the number of words that user has inputted.
 								while ($i++ < $numberWords){
 									$wordy = extractWord();
@@ -159,7 +159,6 @@
 						</p>
 					 	<div class='submit'><input type='submit' value='Submit' class='pill'></div>
 				 </form>
-				 <?php echo $wordy; ?>
 			 </div>
 		</div>
 	</body>
