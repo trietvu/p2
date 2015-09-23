@@ -17,7 +17,7 @@
 					 <?php
 							//Created function to pull random words from crosswd.txt file.
 							function extractWord(){
-								$words =	explode(',',file_get_contents('files/crosswd.txt', true))[rand()];
+								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand()];
 								return $words;
 								}
 
