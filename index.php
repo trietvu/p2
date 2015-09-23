@@ -17,7 +17,7 @@
 					 <?php
 							//Created function to pull random words from crosswd.txt file.
 							function extractWord(){
-								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand(0,113808)];
+								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand(0,113807)];
 								return $words;
 								}
 
@@ -31,8 +31,7 @@
 									}
 								}
 								else{
-									//Default number of words when page is first loaded.
-									$numberWords = 4;
+									$numberWords = 1;
 								}
 
 								//Checkbox option to add a number at the end of the string.
@@ -80,6 +79,7 @@
 									}
 									//Ends loop if a whole number is not inputted.
 									elseif(ctype_digit($numberWords) == false){
+										print 'Please input a whole number below and select your parameters to generate your xkcd password.';
 										break;
 									}
 									elseif($i < $numberWords ){
