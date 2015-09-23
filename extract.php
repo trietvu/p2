@@ -12,7 +12,7 @@
 	<body>
 
 					 <?php
-								$words =	explode(',',file_get_contents('files/crosswd.txt'));
+								$words =	explode(',',file_get_contents('files/crosswd.txt'))[rand()];
 								echo $words;
 					 ?>
 	</body>
