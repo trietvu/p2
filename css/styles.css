@@ -54,6 +54,18 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight: bold;
+	color: #333;
+	line-height: 130%;
+	margin: 0px 0px 30px 0px;
+	padding: 0px;
+	border: 0px;
+	width: 580px;
+}
+
 .pill {
 	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
 	font-size:20px;
@@ -80,7 +92,7 @@ h1 {
 .conditions {
 	width: 622px;
 	margin: 0px 0px 0px 0px;
-	padding: 20px 0px 20px 50px;
+	padding: 10px 0px 20px 50px;
 	background-color: #eee;
 	border-bottom: 1px solid #666;
 }

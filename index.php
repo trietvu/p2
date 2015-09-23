@@ -25,13 +25,17 @@
 								$i = 0;
 								if(isset($_POST['numberWords'])){
 									$numberWords = $_POST['numberWords'];
+									//Condition to determine if user has inputted any data
+									if($numberWords == NULL){
+										$numberWords = 4;
+									}
 									//Condition to determine if the number of words field input is an integer
-									if(ctype_digit($numberWords) == false){
-										print '<p>Please type in a <u>whole number</u> between 1-9.</p>';
+									elseif(is_numeric($numberWords) == false){
+										print 'Please use <u>whole numbers</u> between 1-9.<br>No letters or symbols are allowed.';
 									}
 								}
 								else{
-									$numberWords = 1;
+									$numberWords = 4;
 								}
 
 								//Checkbox option to add a number at the end of the string.
@@ -78,8 +82,8 @@
 										break;
 									}
 									//Ends loop if a whole number is not inputted.
-									elseif(ctype_digit($numberWords) == false){
-										print 'Please input a whole number below and select your parameters to generate your xkcd password.';
+									elseif(is_int($numberWords) === false){
+										print '<p>Please use ONLY whole numbers.</p>';
 										break;
 									}
 									elseif($i < $numberWords ){
@@ -133,8 +137,12 @@
 				 </div>
 				 <div class='conditions'>
 					 <form method='POST' action='index.php'>
+						 <p>
+ 					 		<h2>Please input a whole number below and select your parameters to generate your xkcd password. Or simply hit the "Submit" button again to generate another password with the default settings.</h2>
+ 						</p>
+						<p></p>
 						<p>
-					 		<label for='numberWords'>Number of words:</lable> <input type='int' name='numberWords'> (Max. of 9)<br><br>
+					 		<label for='numberWords'>Number of words:</lable> <input type='int' name='numberWords'> (Max. of 9. Default is 4 words)<br><br>
 						</p>
 						<p>
 							<input type='checkbox' name='addNumber' id='addNumber' value='1'>
