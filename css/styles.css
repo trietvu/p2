@@ -38,6 +38,8 @@ body {
 	-moz-border-radius:5px;
 	border:1px solid #666;
 	text-shadow:#C17C3A 0 -1px 0;
+	max-width: 650px;
+	word-wrap: break-word;
 }
 
 h1 {
