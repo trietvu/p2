@@ -81,11 +81,6 @@
 										echo '<p>Please select a number between 1-9.</p>';
 										break;
 									}
-									//Ends loop if a whole number is not inputted.
-									elseif(is_int($numberWords) === false){
-										print '<p>Please use ONLY whole numbers.</p>';
-										break;
-									}
 									elseif($i < $numberWords ){
 										//Condition to add a capital letter to each word
 										if(isset($_POST['addCapital'])){
