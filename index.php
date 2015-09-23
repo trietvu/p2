@@ -78,6 +78,10 @@
 										echo '<p>Please select a number between 1-9.</p>';
 										break;
 									}
+									//Ends loop if a whole number is not inputted.
+									elseif(ctype_digit($numberWords) == false){
+										break;
+									}
 									elseif($i < $numberWords ){
 										//Condition to add a capital letter to each word
 										if(isset($_POST['addCapital'])){
