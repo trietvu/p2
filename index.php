@@ -75,7 +75,7 @@
 									$wordy = preg_replace('/\s+/', '', $wordy);
 									if($numberWords > 9){
 										//Restricts user to no more than 9 words.
-										echo 'Please select a number between 1-9.';
+										echo '<p>Please select a number between 1-9.</p>';
 										break;
 									}
 									elseif($i < $numberWords ){
